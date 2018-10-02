@@ -1,15 +1,19 @@
 @font-face {
-    font-family: Alte-Din;
-    src: url("css/fonts/din1451alt-altedin1451.ttf");
+  font-family: 'alteDin';
+  src: url('din1451alt-altedin1451.eot'); /* IE9 Compat Modes */
+  src: url('din1451alt-altedin1451.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('din1451alt-altedin1451.woff2') format('woff2'), /* Super Modern Browsers */
+       url('din1451alt-altedin1451.woff') format('woff'), /* Pretty Modern Browsers */
+       url('din1451alt-altedin1451.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('din1451alt-altedin1451.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
 
 body {
     margin: 60px auto;
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Alte-Din', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -27,7 +31,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Alte-Din', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
