@@ -51,6 +51,13 @@ p {
     line-height: 1.4em;
     color: #FFFFFF;
 }
+
+p ul{
+    font-size: 1.5em;
+    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
+    color: #FFFFFF;
+}
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
