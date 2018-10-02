@@ -30,7 +30,8 @@ a {
     color: #FFFFFF;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #CC3333;
 }
 h1 {
     font-size: 3em;
@@ -46,7 +47,7 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-    color: #FFFFFF;
+    color: #FAFAFA;
 }
 
 ul.posts {
