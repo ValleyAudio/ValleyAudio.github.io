@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Alte-Din";
-    src: url("css/fonts/din1451alt-altedin1451.ttf");
+    src: url("fonts/din1451alt-altedin1451.ttf");
 }
 
 
@@ -27,7 +27,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Alte-Din';
+    font-family:'Alte-Din', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
