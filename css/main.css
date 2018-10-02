@@ -35,6 +35,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
+    font-weight: normal;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #FFFFFF;
 }
