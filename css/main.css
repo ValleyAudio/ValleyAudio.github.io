@@ -39,6 +39,12 @@ h1 {
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #FFFFFF;
 }
+h2 {
+    font-size: 2em;
+    font-weight: normal;
+    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #FFFFFF;
+}
 p {
     font-size: 1.5em;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
