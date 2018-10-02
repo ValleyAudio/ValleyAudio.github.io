@@ -45,7 +45,7 @@ h2 {
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #FFFFFF;
 }
-p {
+p, p ol li, p ul li {
     font-size: 1.5em;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
