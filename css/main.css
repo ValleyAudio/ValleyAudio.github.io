@@ -47,12 +47,14 @@ h2 {
 }
 p {
     font-size: 1.5em;
+    font-weight: normal;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #FFFFFF;
 }
 li {
     font-size: 1.5em;
+    font-weight: normal;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #FFFFFF;
 }
