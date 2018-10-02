@@ -9,12 +9,8 @@
 }
 
 body {
-    font-size: 1.5em;
-    font-weight: normal;
-    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
-    line-height: 1.4em;
-    background-color: #000000;
     color: #DDDDDD
+    background-color: #1A1A1A;
     margin: 60px auto;
     width: 70%;
 }
@@ -52,7 +48,6 @@ h2 {
 }
 p {
     font-size: 1.5em;
-    font-weight: normal;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #FFFFFF;
