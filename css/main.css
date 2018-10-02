@@ -17,7 +17,7 @@ nav ul, footer ul {
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
-    font-weight: bold;
+    font-weight: normal;
     color: #FFFFFF;
 }
 nav ul li, footer ul li {
