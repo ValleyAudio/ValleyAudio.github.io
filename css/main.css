@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Alte-Din";
+    src: url("css/fonts/din1451alt-altedin1451.ttf");
+}
+
+
 body {
     margin: 60px auto;
     width: 70%;
