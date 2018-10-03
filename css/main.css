@@ -20,6 +20,7 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: normal;
+    font-size: 1.1em
     color: #FFFFFF;
 }
 nav ul li, footer ul li {
@@ -61,7 +62,7 @@ p {
 }
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #FAFAFA;
 }
 
