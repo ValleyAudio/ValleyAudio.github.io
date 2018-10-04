@@ -65,6 +65,10 @@ footer {
     color: #FAFAFA;
 }
 
+ul li {
+    font-family: 'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
@@ -73,6 +77,5 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-    font-family: 'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #FFFFFF;
 }
