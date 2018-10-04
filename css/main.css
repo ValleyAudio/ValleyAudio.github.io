@@ -75,6 +75,10 @@ ul.posts li {
     color: #FFFFFF;
 }*/
 
+ul {
+    list-style-type: disc;
+}
+
 ul li {
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
