@@ -35,6 +35,11 @@ a:hover {
     text-decoration: underline;
     color: #25a3ff;
 }
+
+nav a {
+    color: #FFFFFF
+}
+
 h1 {
     font-size: 3em;
     font-weight: normal;
