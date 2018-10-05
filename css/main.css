@@ -92,3 +92,12 @@ ul li {
     color: #DFDFDF;
     line-height:1.4em;
 }
+
+ul li ul li{
+    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #DFDFDF;
+    line-height:1.4em;
+}
