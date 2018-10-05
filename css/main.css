@@ -62,7 +62,7 @@ p {
     font-size: 1.25em;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.3em;
-    color: #DDDDDD;
+    color: #DFDFDF;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -89,6 +89,6 @@ ul li {
     padding: 0px;
     font-weight: normal;
     font-size: 1.1em;
-    color: #DDDDDD;
+    color: #DFDFDF;
     line-height:1.3em;
 }
