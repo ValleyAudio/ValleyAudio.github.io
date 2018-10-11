@@ -113,7 +113,7 @@ table, th, tr {
 }
 
 .accordion {
-    background-color: #1E1E1E;
+    background-color: #282828;
     color: #FFFFFF;
     cursor: pointer;
     padding: 18px;
@@ -130,7 +130,7 @@ table, th, tr {
 }
 
 .active, .accordion:hover {
-    background-color: #2E2E2E;
+    background-color: #2F2F2F;
 }
 
 .panel {
