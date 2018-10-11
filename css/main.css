@@ -108,6 +108,5 @@ table, th, tr {
     line-height: 1.4em;
     color: #DFDFDF;
     border: 1px solid white;
-    border-collapse: separate;
-    border-spacing: 0px;
+    border-collapse: collapse;
 }
