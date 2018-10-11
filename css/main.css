@@ -111,3 +111,32 @@ table, th, tr {
     border: 1px solid white;
     border-collapse: collapse;
 }
+
+.accordion {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-size: 1.25em;
+    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
+    color: #DFDFDF;
+}
+
+.active, .accordion:hover {
+    background-color: #2E2E2E;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #1A1A1A;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
