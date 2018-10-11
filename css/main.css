@@ -147,7 +147,8 @@ table, th, tr {
 }
 
 .panel {
-    padding: 0 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: #1A1A1A;
     max-height: 0;
     overflow: hidden;
