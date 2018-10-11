@@ -108,6 +108,7 @@ table, th, tr {
     line-height: 1.4em;
     color: #DFDFDF;
     border: 1px solid white;
+    border-collapse: collapse;
 }
 
 .accordion {
@@ -148,6 +149,8 @@ table, th, tr {
 .panel {
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: #1A1A1A;
     max-height: 0;
     overflow: hidden;
