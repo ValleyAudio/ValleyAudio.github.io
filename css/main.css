@@ -103,7 +103,6 @@ ul li ul li{
 }
 
 table, th, tr {
-    font-weight: normal;
     font-size: 1.1em;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
