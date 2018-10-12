@@ -13,14 +13,16 @@ title: Dexter
         <li><a href="#desc">Description</a></li>
         <li><a href="#userGuide">User Guide</a></li>
         <ul>
+            <li><a href="#connectivity">Connectivity</a></li>
             <li><a href="#masterControls">Master Controls</a></li>
             <li><a href="#algorithms">Algorithms</a></li>
             <li><a href="#operators">Operators</a></li>
             <li><a href="#wavetableMenu">Wavetable Menu</a></li>
-            <li><a href="#assignModulation">Assignable Modulation Menu</a></li>
+            <li><a href="#modMenu">Modulation Menu</a></li>
             <li><a href="#contextMenu">Context Menu</a></li>
         </ul>
         <li><a href="#howItWorks">How it works</a></li>
+        <li><a href="#connectivity">Connectivity</a></li>
     </ul>
     <h2 id="desc">Description</h2>
     <p>
@@ -162,7 +164,7 @@ title: Dexter
         By default the “Opal” table is loaded, but this can be changed by going to the “Wavetable” page in the settings menu,
         and turning the blue wavetable knob to select another table. The following list gives a description about each table.
     </p>
-    <button class="accordion">Wavetables (click to expand)</button>
+    <button class="accordion">Wavetables</button>
     <div class="panel">
         <table style="width:100%">
             <tr><th>Wavetable Name</th><th>Description</th>
@@ -201,7 +203,7 @@ title: Dexter
             <tr><td>VGame:</td><td> Collection of lo-fi video game type waveforms.</td></tr>
         </table>
     </div>
-    <h3 id="assignModulation">Assignable Modulation Menu (click to expand)</h3>
+    <h3 id="modMenu">Modulation Menus</h3>
     <button class="accordion">Destinations</button>
     <div class="panel">
         <table style="width: 100%">
@@ -227,6 +229,17 @@ title: Dexter
     <p>
         The operators generate a tone using lookup wavetable synthesis using a rising ramp, known as a read phasor, to read the contents of a table. Waves can be scanned through by cross fading between adjacent tables within the same bank of tables. FM synthesis is achieved by offsetting the read phasor’s value with another signal, effectively speeding up / slowing down the read speed. Whilst this is technically known as phase-modulation (PM) and is not true FM, this still modulates the frequency and gives the same effect. If anything, PM is easier to implement, and it is a standard method in commercial FM synthesizers such as the DX series. To expand the versatility of FM synthesis, the read phasor can be shaped in several ways that can distort and mangle the output waveform. Dexter offers 12 shaping modes. By default, the modulator signal  is added to the read phasor before shaping, however it can be added post shaping by engaging the “Post Shpe” button. This allows for an alternative timbre and at times can make the shaping sound more pleasant.
     </p>
+    <h2 id="connectivity">Connectivity</h2>
+    <p>
+        Half of Dexter’s front panel is covered in jacks, where most of these are in fact CV inputs.
+        However, whilst it seems intimidating at first glance, there is a lot a of repetition.
+        The following table describes the functionality of each jack:
+    </p>
+    <table style="width: 100%">
+        <tr><td>A L and A R</td><td>Stereo outputs of voice A. Chord notes are spread between the L and R outputs, or summed to the L output if only L is connected.</td></tr>
+        <tr><td>OP 1 to 4</td><td>These are the individual output taps from a voice's operators. Can be either pre- or post-fade level.</td></tr>
+        <tr><td>B Out</td><td>Mono output of voice B</td></tr>
+    </table>
 </div><!-- /.topograph -->
 
 <script src="/script/accordion.js"></script>
