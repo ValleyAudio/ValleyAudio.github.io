@@ -155,8 +155,8 @@ table, th, tr, td {
 .panel {
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
     background-color: #1A1A1A;
     max-height: 0;
     overflow: hidden;
