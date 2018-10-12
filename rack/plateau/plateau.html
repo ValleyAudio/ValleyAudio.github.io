@@ -11,8 +11,18 @@ title: Plateau
     <p>Plateau is a plate reverb module designed to make a dry, lifeless patch sound lush, deep and spacious. However, Plateau attempts to go beyond what most other reverberators offer.</p>
     <h2>Contents</h2>
     <ul>
-        <li>User Guide</li>
+        <li><a href="#userGuide">User Guide</a></li>
         <li><a href="#howItWorks">How it works</a></li>
+    </ul>
+    <h2 id="userGuide">User Guide</h2>
+    <h3 id="controls">Controls</h3>
+    <ul>
+        <li><b>Dry & Wet:</b> Control the levels of the original and reverberant signals.</li>
+        <li><b>PreD:</b> Pre-delay. Determines the delay for when the original signal is fed into the reveberator. Ranges from 0 to 500ms.</li>
+        <li><b>Low and High:</b> Input and reverberator filters.</li>
+        <li><b>Size:</b> Sets the overall delay time and apparent 'size' of the reverb. Ranges from very short to extremely long.</li>
+        <li><b>Diffusion:</b> Controls how diffused and smeared the reverb is. No diffusion results in audible echoes.</li>
+        <li><b>Decay:</b> Sets the speed at which the signal decays over time. The maximum setting results in a long reverb that evolves over time into a very slowly dying cloud of sound.</li>
     </ul>
     <h2 id="howItWorks">How it works</h2>
     <p>
@@ -26,7 +36,7 @@ title: Plateau
         Next, the diffused signal is passed into the 'Reverberation Tank' which is two chains of filters arranged in parrallel. The chains are fed into each other to continously diffuse the signal and build up a dense reverberation. The reverb decays over time thanks to the equalisation and decay stages after each chain. The left and right output signals are extracted from this tank at several tap points (not shown).
     </p>
     <p>
-        Dattorro (1997) found that an unpleasant resonance and ringing can build up unless the delay times of the all-pass filters are subtly modulated by low frequency oscillators (LFOs). This modulation changes the resonant frequency of the reverberator over-time to supress ringing, as well as change the reflection pattern so that it appears to continously vary. With moderate modulation, this results in an audible pitch shifting.
+        Dattorro (1997) found that unpleasant ringing can build up over time. To combat this, the delay times of the all-pass filters in the tank are subtly modulated by low frequency oscillators (LFOs). This modulation changes the resonant frequency of the reverberator over-time to supress the ringing. This also slowly changes the reflection pattern so that it appears to continously vary. With moderate modulation, this results in an audible pitch shifting.
     </p>
     <h2>Bibliography</h2>
     <p>
