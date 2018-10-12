@@ -65,10 +65,6 @@ p {
     line-height: 1.4em;
     color: #CDCDCD;
 }
-b, strong {
-    font-weight: bolder;
-    color: #FFFFFF;
-}
 
 footer {
     border-top: 1px solid #d5d5d5;
