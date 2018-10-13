@@ -66,6 +66,12 @@ p {
     color: #CDCDCD;
 }
 
+b {
+    font-weight: bold;
+    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #FFFFFF;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 1.2em;
