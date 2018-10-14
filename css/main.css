@@ -68,6 +68,7 @@ p {
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #CDCDCD;
+    text-align: justify;
 }
 
 b {
@@ -103,6 +104,7 @@ ul li {
     font-size: 1.2em;
     color: #DFDFDF;
     line-height:1.4em;
+    text-align: justify;
 }
 
 ul li ul li{
@@ -112,6 +114,7 @@ ul li ul li{
     font-size: 1em;
     color: #DFDFDF;
     line-height:1.4em;
+    text-align: justify;
 }
 
 table, th, tr {
@@ -130,6 +133,7 @@ td {
     color: #CDCDCD;
     border: 1px solid white;
     border-collapse: collapse;
+    text-align: justify;
 }
 
 .accordion {
