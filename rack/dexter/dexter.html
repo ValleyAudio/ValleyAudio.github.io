@@ -9,7 +9,7 @@ title: Dexter
         <img src="images/dexter.jpg" alt="Dexter" style="max-width:100%; max-height:500px; margin-top:20px; margin-bottom:20px;">
     </center>
     <p>
-        Dexter is a complex, 4 operator wavetable oscillator with DX style frequency modulation (FM) and extensive modulation possibilities. It's large number of possibilities and options enables it to produce a wide range of complex sounds, textures and timbres.
+        Dexter is a complex, 4 operator wavetable oscillator with DX style frequency modulation (FM) and extensive control possibilities. Its large number of possibilities and options enables it to produce a wide range of complex sounds, textures and timbres.
     </p>
     <h2>Contents</h2>
     <ul style="list-style:none">
@@ -187,7 +187,7 @@ title: Dexter
     <button class="accordion">Wavetables</button>
     <div class="panel">
         <table style="width:100%">
-            <tr><th>Wavetable Name</th><th>Description</th>
+            <tr><th>Wavetable Name</th><th>Description</th></tr>
             <tr><td>Opal:</td><td> Based on the waves from a chip used in an early 90’s PC soundcard</td></tr>
             <tr><td>Basic:</td><td> Sine, Triangle, Sawtooth and Pulse with PWM.</td></tr>
             <tr><td>TeeEks:</td><td> Waves from a popular 1U rack unit FM synthesiser.</td></tr>
@@ -223,6 +223,46 @@ title: Dexter
             <tr><td>VGame:</td><td> Collection of lo-fi video game type waveforms.</td></tr>
         </table>
     </div>
+    <p>The following lists show the different phasor shaping and operator sync modes.</p>
+    <button class="accordion">Shape Modes</button>
+    <div class="panel">
+        <table style="width: 100%">
+            <tr><th>Shape Mode</th><th>Description</th></tr>
+            <tr><td>Bend</td><td>The phasor is dragged to one side from the middle so that the 1st half of the table is read faster than the last half.</td></tr>
+            <tr><td>Tilt</td><td>The phasor reads the table faster and then waits at the end until a new cycle begins</td></tr>
+            <tr><td>Lean</td><td>The phasor follows a curve, so the table is initial read slowly then gradually faster towards the end of the cycle</td></tr>
+            <tr><td>Twist</td><td>Twists the middle third of the phasor around the centre, making read the table forwards, backwards, then forwards again</td></tr>
+            <tr><td>Wrap</td><td>The end of the phasor is wrapped back to the beginning several times, creating an effect similar to classic hard sync</td></tr>
+            <tr><td>Mirror</td><td>Both ends of the phasor are mirrored when either reaches the start or end</td></tr>
+            <tr><td>Reflect</td><td>At a given point, the phasor is switched from an rising ramp to a falling ramp</td></tr>
+            <tr><td>Pulse</td><td>The phasor is switched off an on at several positions, giving a type of PWM effect</td></tr>
+            <tr><td>Step 4</td><td>Blends the phasor into a 4-step staircase, creating a very lo-fi, bit crushed sound</td></tr>
+            <tr><td>Step 8</td><td>Same as above but with an 8-step staircase</td></tr>
+            <tr><td>Step 16</td><td>Same as above but with an 16-step staircase</td></tr>
+            <tr><td>Var Step</td><td>Gradually makes the phasor increasingly stepped until it dissapears completely</td></tr>
+        </table>
+    </div>
+    <button class="accordion">Sync Modes</button>
+    <div class="panel">
+        <table style="width: 100%">
+            <tr><th>Sync Mode</th><th>Description</th></tr>
+            <tr><td>Hard</td><td>Classic hard sync effect where the phasor restarts from the beginning</td></tr>
+            <tr><td>5th</td><td>Reads the table at 1.5x speed until another sync event occurs, where it will return to 1x</td></tr>
+            <tr><td>+1 Oct</td><td>Reads the table at 2x speed until another sync event occurs, where it will return to 1x</td></tr>
+            <tr><td>-1 Oct</td><td>Reads the table at 0.5x speed until another sync event occurs, where it will return to 1x</td></tr>
+            <tr><td>Rise 1</td><td>A value of 0.5 is added to the read speed until it reaches 2x, where it after it will return to 1x</td></tr>
+            <tr><td>Rise 2</td><td>A value of 0.5 is added to the read speed until it reaches 4x, where it after it will return to 1x</td></tr>
+            <tr><td>Fall 1</td><td>Same as Rise 1 but in reverse</td></tr>
+            <tr><td>Fall 2</td><td>Same as Rise 2 but in reverse</td></tr>
+            <tr><td>Pull 1</td><td>Is pulled back by 1/2 a cycle</td></tr>
+            <tr><td>Pull 2</td><td>Is pulled back by 1/4 a cycle</td></tr>
+            <tr><td>Pull 2</td><td>Is pushed back by 1/4 a cycle</td></tr>
+            <tr><td>Pull 2</td><td>Is pushed back by 1/2 a cycle</td></tr>
+            <tr><td>Hold</td><td>Is held at its current value until the next sync signal is received</td></tr>
+            <tr><td>One Shot</td><td>When it receives a sync event, phasor starts from the beginning and performs one cycle before waiting for another event</td></tr>
+            <tr><td>Lock Shot</td><td>Same as above, however, the operator rejects any sync events whilst performing a cycle. This creates a harmonic locking effect</td></tr>
+        </table>
+    </div>
     <h3 id="modMenu">Modulation Menus</h3>
     <p>
         Dexter features 4 assignable modulation inputs. These two menus allow you to route each modulation input to 13 different operator parameters.
@@ -236,7 +276,7 @@ title: Dexter
     <button class="accordion">Destinations</button>
     <div class="panel">
         <table style="width: 100%">
-            <tr><th>Destination</th><th>Description</th>
+            <tr><th>Destination</th><th>Description</th></tr>
             <tr><td>Pitch</td><td>V/Oct modulation of the operator’s pitch</td></tr>
             <tr><td>Multiple</td><td>Operator’s frequency multiplier</td></tr>
             <tr><td>Wave Position</td><td>The position of the wave table the operator reads from</td></tr>
@@ -283,6 +323,16 @@ title: Dexter
             <tr><td>FB (Feedback)</td><td>Feedback CV</td></tr>
             <tr><td>Bright</td><td>Brightness CV</td></tr>
             <tr><td>Shape</td><td>Shape CV</td></tr>
+        </table>
+    </div>
+    <button class="accordion">Operator Inputs</button>
+    <div class="panel">
+        <table class="wider" style="width: 100%">
+            <tr><td>Pitch</td><td>Volts per octave pitch control. <i>Note: 'Mul' can be modulated via an assignable mod input</i></td></tr>
+            <tr><td>Wave</td><td>Modulates the wave table position</td></tr>
+            <tr><td>Shape</td><td>Modulates the phasor shape</td></tr>
+            <tr><td>Level</td><td>Modulates the operator level</td></tr>
+            <tr><td>Mod 1 to 4</td><td>Assignable modulation inputs</td></tr>
         </table>
     </div>
 </div><!-- /.topograph -->
