@@ -21,19 +21,47 @@ title: Topograph & µGraph
     <h2 id="Usage">Usage</h2>
     <h3>Controls</h3>
     <ul>
-        <li><b>Tempo:</b> The blue knob controls the tempo or speed of the sequencer. Fully left enables external clocking.</li>
-        <li><b>Map X/Y:</b> Sets the pattern skeleton. These controls are continuously variable, which means the patterns can be smoothly morphed between.</li>
+        <li><b>Tempo:</b> The blue knob controls the tempo or speed of the sequencer. Fully left enables external clocking</li>
+        <li><b>Map X/Y:</b> Sets the pattern skeleton. These controls are continuously variable, which means the patterns can be smoothly morphed between</li>
         <li><b>Chaos:</b> Determines how often the density of each pattern channel will vary after each bar.</li>
         <li><b>Density:</b> These three knobs control how dense each channel will be. Fully left effectively mutes the channel, whilst fully right causes the channel's pattern to be very dense and regular</li>
-        <li><b>Swing:</b> Controls the swing or groove of the sequence. This is not normally available in Grids whete normally the Chaos knob is sacrificed. This also allows for swing in Euclidean mode.</li>
+        <li><b>Swing:</b> Controls the swing or groove of the sequence. This is not normally available in Grids whete normally the Chaos knob is sacrificed. This also allows for swing in Euclidean mode</li>
     </ul>
     <h3>Context Menu</h3>
+    <p>This list is mostly relevant to Topograph as most of these options have dedicated control widgets in µGraph</p>
     <ul>
         <li>
-            <b>Panel Style:</b> Changes the colour of the front panel. Useful for when patching in poor lighting conditions.
+            <b>Panel Style:</b> Changes the colour of the front panel. Useful for when patching in poor lighting conditions
             <ul>
                 <li>Dark</li>
                 <li>Light</li>
+            </ul>
+            <b>Sequencer Mode:</b> Determines how the built-in drum patterns will be played
+            <ul>
+                <li>Henri: The "Max 4 Live" clone mode</li>
+                <li>Olivier: The original mode</li>
+                <li>Euclidean: Turns the module into a basic Euclidean sequencer</li>
+            </ul>
+            <b>Trigger Output Mode:</b> Sets the length of the output pulse
+            <ul>
+                <li>1ms Pulse</li>
+                <li>Gate</li>
+            </ul>
+            <b>Accent Output Mode:</b> Dictates the behaviour of the 3 accent outputs
+            <ul>
+                <li>Inidividual Accents, where each is a dedicated accent for each instrument output</li>
+                <li>Accent / Clock / Reset, where all accents are summed to a single output whilst there is now a dedicated clock and reset output. Useful for chaining and slaving sequencers</li>
+            </ul>
+            <b>Ext. Clock Resolution</b> Sets the internal step counter to a multiple of the external clock's resolution (i.e. Pulse Per Quarter Note, PPQN). For best syncronisation, match this setting to the external clock's resolution
+            <ul>
+                <li>4 PPQN</li>
+                <li>8 PPQN</li>
+                <li>24 PPQN</li>
+            </ul>
+            <b>Run Mode</b> Determines whether the sequencer's "Run" behaviour
+            <ul>
+                <li>Toggle: The sequencer will either start or stop each time "Run" is triggered</li>
+                <li>Momentary: The sequencer will only run if "Run" is high / on. Else, it will not run when "Run" is low / off</li>
             </ul>
         </li>
     </ul>
