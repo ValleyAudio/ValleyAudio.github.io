@@ -4,19 +4,29 @@ title: Interzone
 ---
 <div class="interzone">
     <h1>Interzone</h1>
-    <h2>Monophonic, virtual analogue synth voice</h2>
+    <h2>A monophonic, virtual analogue synth voice</h2>
     <center>
         <img src="images/interzone.jpg" alt="Interzone" style="max-width:100%; max-height:500px; margin-top:20px; margin-bottom:20px;">
     </center>
-    <p>"A big man with a plan has got a storm a coming, monster coming."</p>
-    <br>
+    <p>
+        Interzone is a complete synth voice that has been designed to emulate a basic yet versatile monophonic, analogue synthesizer.
+        It combines several 'bread-n'butter' modules into a single package that can operate by itself, or be part of a bigger system thanks to its external modulation jacks.
+        Interzone has been designed with effiency in mind, employing inexpensive DSP techniques to ensure that as little CPU usage as possible.
+
+    </p>
+    <p>
+        It has been a labour of love, and I personally hope that you get as much out of it as I did developing it.
+    </p>
     <h2>Contents</h2>
     <ul>
         <li><a href="#userGuide">User Guide</a></li>
         <ul>
             <li><a href="#vco">VCO</a></li>
             <li><a href="#mixer">Mixer</a></li>
+            <li><a href="#filter">Filter</a></li>
+            <li><a href="#modulation">Modulation</a></li>
             <li><a href="#outputs">Outputs</a></li>
+            <li><a href="#contextMenu">Context Menu</a></li>
         </ul>
         <li><a href="#howItWorks">How it works</a></li>
     </ul>
@@ -25,19 +35,69 @@ title: Interzone
         The major controls of Interzone have CV inputs available allowing for full automation of those parameters.
     </p>
     <h3 id="vco">VCO</h3>
+    <center>
+        <img src="images/vco.jpg" alt="Filter" style="max-width:100%; max-height:250px; margin-top:20px; margin-bottom:20px;">
+    </center>
     <p>
         Interzone features one voltage controlled oscillator (VCO) that outputs 3 waveforms simultaneously: Saw, Pulse and a Sub wave. These waves are mixed using the mixer section discussed <a href="#mixer">here.</a>
         The VCO section in Interzone is where you control the tuning, pulse width, and modulation applied to the VCO's pitch and pulse width.
     </p>
     <h3 id="mixer">Mixer</h3>
+    <center>
+        <img src="images/mixer.jpg" alt="Mixer" style="max-width:100%; max-height:250px; margin-top:20px; margin-bottom:20px;">
+    </center>
     <p>
         This section is where the VCO's waves, the noise and external input are all blended together. Each sound source has it's own dedicated fader that controls the source's level.
         The mixer is also where the Sub wave's octave and waveform is chosen, as well as the noise generator's type: white or pink.
     </p>
+    <h3 id="filter">Filter</h3>
+    <center>
+        <img src="images/filter.jpg" alt="Filter" style="max-width:100%; max-height:250px; margin-top:20px; margin-bottom:20px;">
+    </center>
+    <p>
+        The filter is key part of Interzone. It is a switchable 12/24 dB per octave, or 2/4 pole design, and saturates nicely if overdriven.
+        The output of the mixer is passed into the filter, which is then cascaded into a highpass filter which can be used to tame some of the low end of the sound.
+    </p>
+    <h3 id="modulation">Modulation</h3>
+    <center>
+        <img src="images/modulation.jpg" alt="Filter" style="max-width:100%; max-height:250px; margin-top:20px; margin-bottom:20px;">
+    </center>
+    <p>
+        Whilst a VCO, a mixer and a filter can create a good sound, it can quickly become boring for the listener if the notes or sounds produced all seem the same.
+        To add variety and movement to the sound, Interzone provides an LFO and an envelope generator. On the VCO and Filter sections, you will have seen sliders that allow for modulation from either the LFO or envelope generator.
+        The VCO has options for pitch and pulse width modulation (PWM), whilst the filter features cutoff modulation.
+    </p>
+    <h3>LFO</h3>
+    <p>The LFO features 7 waveforms, from sine through to noise.</p>
+    <ul>
+        <li><b>Rate:</b> Sets the speed of the LFO, from very slow up to audio rate modulation.</li>
+        <li><b>Fine:</b> Fine tunes the speed of the LFO.</li>
+        <li><b>Waveform:</b> Chooses the waveform that comes out of the LFO to all destinations.</li>
+        <li><b>Slew:</b> Smooths out any jumps in the LFO's waveform. Note that slew control is for internal use and does not affect the individual waveform outputs.</li>
+    </ul>
+    <h3>Envelope Generator</h3>
+    <p>
+        The envelope generator is the usual, 4-stage ADSR type. This is hardwired to the VCA (though this can be switched on the VCA itself) to provide the overall shape of the level of a note.
+    </p>
+    <ul>
+        <li><b>(A)ttack:</b> Sets the rate that the note takes to fade in.</li>
+        <li><b>(D)ecay:</b> Determines how long it takes for the note to fall from fully open, down to the level set by...</li>
+        <li><b>(S)ustain:</b> The level that the envelope will stay at as long as the 'Gate' input is high (i.e. when a note is being held)</li>
+        <li><b>(R)elease:</b> Controls how long it takes for a note to fade away once the 'Gate' input is low (i.e. when the note is released)</li>
+        <br>
+        <li><b>(Man)ual:</b> This button allows for the envelope generator to be manually gated as long as it is being held down.</li>
+        <li><b>Length switch:</b> 'Short' sets rate to go from and snappy to moderatley long, whilst 'Long' slows the rate by x10 so that it ranges from sluggish to extremeley long</li>
+        <li><b>Cycle switch:</b> 'Gate' sets the envelope to only operate once whilst the gate input is high, whilst 'Cycle' causes the envelope to loop back to the attack stage once it has finished the decay stage. Cycle does require an initial gate to set it in motion.</li>
+    </ul>
     <h3 id="Outputs">Outputs</h3>
     <ul>
         <li><b> </b> </li>
     </ul>
+    <h3 id="contextMenu">Context Menu</h3>
+    <p>
+        This menu is accessed by right-clicking on any blank area of Interzone. The only available entry is the option to switch the panel from 'Dark' or 'Light', as is possible with all other Valley modules.
+    </p>
+    <ul>
     <h2 id="howItWorks">How it works</h2>
     <p>
 
