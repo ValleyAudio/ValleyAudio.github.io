@@ -18,6 +18,9 @@ title: Amalgam
             <li><a href="#outputs">Outputs</a></li>
         </ul>
         <li><a href="#howItWorks">How it works</a></li>
+        <ul>
+            <li><a href="#overviewTypes">Overview of types</a></li>
+        </ul>
     </ul>
     <h2 id="userGuide">User Guide</h2>
     <p>
@@ -36,14 +39,36 @@ title: Amalgam
         <li><b>Type CV:</b> CV input that sets the current 'Type', relative to the 'Type' knob.</li>
         <li><b>Param A and B CV:</b> CV input that sets Param value, relative to the corresponding 'Param' knob.</li>
     </ul>
-    <h3 id="Outputs">Outputs</h3>
+    <h3 id="outputs">Outputs</h3>
     <ul>
         <li><b>Z:</b> Main stereo output of the module.</li>
         <li><b>L/R AND and XOR</b> AND and XOR outputs where each channel of X is AND'd or XOR'd with the corresponding Y channel e.g. Left AND = XL AND YL.</li>
         <li><b>Pulses: </b> These outputs are pulses that are derived from the left and right Z outputs, both single and double (or octave doubled) pulses.</li>
     </ul>
     <h2 id="howItWorks">How it works</h2>
-    <p>
+    <button id="overviewTypes" class="accordion">Overview of types</button>
+    <div class="panel">
+        <table class="wider" style="width: 100%">
+            <tr><td><b>Type</b></td><td><b>Description</b></td><td><b>Param A</b></td><td><b>Param B</b></td></tr>
+            <tr><td>Ringmod 1</td><td>Multiplies X and Y</td><td>Quadrant</td><td>X PWM</td></tr>
+            <tr><td>Ringmod 2</td><td>Fold and multiply X and Y</td><td>Fold X</td><td>Fold Y</td></tr>
+            <tr><td>Ringmod 3</td><td>Fold, multiply and XOR X and Y</td><td>Fold XY</td><td>XOR Blend</td></tr>
+            <tr><td>Diode RM</td><td>Emulates a diode ring modulator</td><td>Off Volt</td><td>On Volt</td></tr>
+            <tr><td>Mini Maxi</td><td>Outputs the min / max between X and Y</td><td>Min/Max Fade</td><td>Difference * Z</td></tr>
+            <tr><td>Sign Switch 1</td><td>Switches between rectified X or Y when they cross a threshold point</td><td>Mid point</td><td>Threshold</td></tr>
+            <tr><td>Sign Switch 2</td><td>Switches between rectified X, Y or zero when they cross a threshold point</td><td>Mid point</td><td>Threshold</td></tr>
+            <tr><td>X Fade</td><td>Fades between X and Y</td><td>Bias/td><td>X Modulate</td></tr>
+            <tr><td>Flip Flop</td><td>Randomly switches between X and Y when they cross a threshold</td><td>Favour</td><td>Threshold</td></tr>
+            <tr><td>Alpha PWM</td><td>Multiplies Y with a pulse shaped X signal</td><td>Pulses</td><td>Pulse Width</td></tr>
+            <tr><td>Bit AND</td><td>Converts X and Y to 32-bit integers and ANDs them</td><td>Bit Depth</td><td>Bit Crush</td></tr>
+            <tr><td>Bit XOR</td><td>Converts X and Y to 32-bit integers and XORs them</td><td>Bit Depth</td><td>Bit Crush</td></tr>
+            <tr><td>Bit Interleave</td><td>Converts X and Y to 32-bit integers and interleaves each bit to produce Z</td><td>Bit Depth</td><td>Bit Crush</td></tr>
+            <tr><td>Bit Glitch</td><td>Converts X and Y to 32-bit integers and switches each bit depending on their previous state</td><td>Jitter</td><td>Bit Crush</td></tr>
+            <tr><td>Float 32 AND</td><td>Directly ANDs X and Y as 32-bit floating point numbers</td><td>Jitter</td><td>Bit Crush</td></tr>
+            <tr><td>Float 32 Interleave</td><td>Directly interleaves each bit of X and Y as 32-bit floating point numbers</td><td>Bit Depth</td><td>Bit Crush</td></tr>
+            <tr><td>Float 32 Glitch</td><td>Directly combines and switches each bit of X and Y depending on their previous state as 32-bit floating point numbers</td><td>Jitter</td><td>Bit Crush</td></tr>
+        </table>
+    </div>
+</div><!-- /.amalgam -->
 
-    </p>
-</div><!-- /.plateau -->
+<script src="/script/accordion.js"></script>

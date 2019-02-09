@@ -25,7 +25,7 @@ title: Interzone
             <li><a href="#mixer">Mixer</a></li>
             <li><a href="#filter">Filter</a></li>
             <li><a href="#modulation">Modulation</a></li>
-            <li><a href="#outputs">Outputs</a></li>
+            <li><a href="#connectivity">Connectivity</a></li>
             <li><a href="#contextMenu">Context Menu</a></li>
         </ul>
         <li><a href="#howItWorks">How it works</a></li>
@@ -42,6 +42,20 @@ title: Interzone
         Interzone features one voltage controlled oscillator (VCO) that outputs 3 waveforms simultaneously: Saw, Pulse and a Sub wave. These waves are mixed using the mixer section discussed <a href="#mixer">here.</a>
         The VCO section in Interzone is where you control the tuning, pulse width, and modulation applied to the VCO's pitch and pulse width.
     </p>
+    <ul>
+        <li><b>Glide:</b> Sets the rate at which the VCO reacts to a change at the VOct input.</li>
+        <li><b>Mod:</b> Pitch modulation depth.</li>
+        <li><b>Mod source:</b> Sets the source of the pitch modulation.</li>
+        <li><b>Envelope polarity:</b> Controls the polarity of the envelope for pitch modulation.</li>
+        <li><b>Octave:</b> Sets the octave of the VCO's pitch.</li>
+        <li><b>Semitone switch:</b> Sets the coarse knob to be continous or quantised to semitones.</li>
+        <li><b>Coarse:</b> Offsets the VCO's pitch.</li>
+        <li><b>Fine:</b> Fine tunes the VCO's pitch.</li>
+        <li><b>Width:</b> Width of the pulse wave, from square to vanished.</li>
+        <li><b>PWM:</b> Pulse width modulation depth.</li>
+        <li><b>PWM source:</b> Sets the source of PWM.</li>
+        <li><b>Envelope polarity:</b> Controls the polarity of the envelope for PWM.</li>
+    </ul>
     <h3 id="mixer">Mixer</h3>
     <center>
         <img src="images/mixer.jpg" alt="Mixer" style="max-width:100%; max-height:250px; margin-top:20px; margin-bottom:20px;">
@@ -58,6 +72,16 @@ title: Interzone
         The filter is key part of Interzone. It is a switchable 12/24 dB per octave, or 2/4 pole design, and saturates nicely if overdriven.
         The output of the mixer is passed into the filter, which is then cascaded into a highpass filter which can be used to tame some of the low end of the sound.
     </p>
+    <ul>
+        <li><b>Freq:</b> Cutoff frequency.</li>
+        <li><b>Res:</b> Resonance.</li>
+        <li><b>HPF:</b> Highpass filter cutoff.</li>
+        <li><b>Envelope polarity:</b> Controls the polarity of the envelope.</li>
+        <li><b>Poles:</b> Sets the slope of the filter.</li>
+        <li><b>Env:</b> Envelope modulation depth.</li>
+        <li><b>LFO:</b> LFO modulation depth.</li>
+        <li><b>VOct:</b> VOct tracking depth.</li>
+    </ul>
     <h3 id="modulation">Modulation</h3>
     <center>
         <img src="images/modulation.jpg" alt="Filter" style="max-width:100%; max-height:250px; margin-top:20px; margin-bottom:20px;">
@@ -89,17 +113,47 @@ title: Interzone
         <li><b>Length switch:</b> 'Short' sets rate to go from and snappy to moderatley long, whilst 'Long' slows the rate by x10 so that it ranges from sluggish to extremeley long</li>
         <li><b>Cycle switch:</b> 'Gate' sets the envelope to only operate once whilst the gate input is high, whilst 'Cycle' causes the envelope to loop back to the attack stage once it has finished the decay stage. Cycle does require an initial gate to set it in motion.</li>
     </ul>
-    <h3 id="Outputs">Outputs</h3>
+    <h3 id="connectivity">Connectivity</h3>
     <ul>
-        <li><b> </b> </li>
+        <li><b>VCO</b></li>
+        <ul>
+            <li><b>VOct:</b> Volts per octave pitch input for the VCO and filter.</li>
+            <li><b>PWM:</b> Pulse width modulation input.</li>
+            <li><b>Saw:</b> Saw wave output.</li>
+            <li><b>Pulse:</b> Pulse wave output.</li>
+            <li><b>Sub:</b> Sub wave output.</li>
+        </ul>
+        <li><b>Mixer</b></li>
+        <ul>
+            <li><b>Ext:</b> External input to the mixer.</li>
+            <li><b>Out:</b> Output from the mixer.</li>
+        </ul>
+        <li><b>Filter</b></li>
+        <ul>
+            <li><b>Freq:</b> Cutoff frequency modulation input. Each of these inputs have a dedicated attenuverter.</li>
+            <li><b>Res:</b> Resonance control input.</li>
+            <li><b>Out:</b> Filter output.</li>
+        </ul>
+        <li><b>VCA</b></li>
+        <ul>
+            <li><b>Level:</b> Offsets the level of the VCA. This can be used for external controlling the VCA.</li>
+        </ul>
+        <li><b>LFO</b></li>
+        <ul>
+            <li><b>Rate:</b> Controls the rate of the LFO.</li>
+            <li><b>Reset:</b> Resets the phase of the LFO.</li>
+            <li><b>Trig:</b> Steps the LFO's sample and hold (SH)function.</li>
+            <li><b>Sine:</b> Sine wave output.</li>
+            <li><b>Triangle:</b> Triangle wave output.</li>
+            <li><b>Ramp Up:</b> Rising ramp wave output.</li>
+            <li><b>Ramp Down:</b> Falling ramp wave output.</li>
+            <li><b>Square:</b> Square wave output.</li>
+            <li><b>Noise:</b> Noise output (the type is set in the mixer section).</li>
+            <li><b>SH:</b> Sample and hold output. The sample and hold uses the noise as its source.</li>
+        </ul>
     </ul>
     <h3 id="contextMenu">Context Menu</h3>
     <p>
         This menu is accessed by right-clicking on any blank area of Interzone. The only available entry is the option to switch the panel from 'Dark' or 'Light', as is possible with all other Valley modules.
-    </p>
-    <ul>
-    <h2 id="howItWorks">How it works</h2>
-    <p>
-
     </p>
 </div><!-- /.plateau -->
