@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 375 150" style="enable-background:new 0 0 375 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E6E6E6;}
+	.st1{font-family:'AlteDIN1451Mittelschrift';}
+	.st2{font-size:14px;}
+	.st3{font-size:12px;}
+	.st4{fill:none;stroke:#FF8500;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:#FF8500;}
+	.st6{fill:none;stroke:#00B500;stroke-width:2;stroke-miterlimit:10;}
+	.st7{fill:#00B500;}
+	.st8{fill:none;stroke:#FF8500;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#DB4061;stroke-width:2;stroke-miterlimit:10;}
+	.st10{fill:#DB4061;}
+	.st11{fill:none;stroke:#E6E6E6;stroke-linecap:round;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#307DEE;stroke-width:2;stroke-miterlimit:10;}
+	.st13{fill:#307DEE;}
+	.st14{fill:none;stroke:#E6E6E6;stroke-width:2;stroke-miterlimit:10;}
+	.st15{fill:none;stroke:#DB4061;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="XMLID_149_">
+	<text id="XMLID_150_" transform="matrix(1 0 0 1 32.9399 109.9902)" class="st0 st1 st2">VCO</text>
+</g>
+<g id="XMLID_1_">
+	<text id="XMLID_2_" transform="matrix(1 0 0 1 56.2148 127.9902)" class="st0 st1 st3">Sub</text>
+</g>
+<rect id="XMLID_148_" x="10.8" y="92.7" class="st4" width="68" height="42"/>
+<g id="XMLID_8_">
+	<g>
+		<line class="st4" x1="79.1" y1="113.7" x2="102.5" y2="113.7"/>
+		<g>
+			<polygon class="st5" points="98.5,117.1 101.9,113.7 98.5,110.3 101.4,110.3 104.8,113.7 101.4,117.1 			"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_34_">
+	<g>
+		<line class="st4" x1="79.1" y1="124.7" x2="102.5" y2="124.7"/>
+		<g>
+			<polygon class="st5" points="98.5,128.1 101.9,124.7 98.5,121.3 101.4,121.3 104.8,124.7 101.4,128.1 			"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_5_">
+	<g>
+		<line class="st4" x1="79.1" y1="102.7" x2="102.5" y2="102.7"/>
+		<g>
+			<polygon class="st5" points="98.5,106.1 101.9,102.7 98.5,99.3 101.4,99.3 104.8,102.7 101.4,106.1 			"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_4_">
+	<g>
+		<line class="st6" x1="174.1" y1="113.7" x2="197.5" y2="113.7"/>
+		<g>
+			<polygon class="st7" points="193.5,117.1 196.9,113.7 193.5,110.3 196.4,110.3 199.8,113.7 196.4,117.1 			"/>
+		</g>
+	</g>
+</g>
+<line id="XMLID_13_" class="st4" x1="102.8" y1="46.9" x2="102.8" y2="71.7"/>
+<line id="XMLID_15_" class="st8" x1="92.8" y1="46.9" x2="92.8" y2="71.7"/>
+<g id="XMLID_21_">
+	<g>
+		<line class="st4" x1="229.8" y1="71.9" x2="229.8" y2="89.3"/>
+		<g>
+			<polygon class="st5" points="226.4,85.3 229.8,88.7 233.2,85.3 233.2,88.2 229.8,91.6 226.4,88.2 			"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_30_">
+	<g>
+		<line class="st9" x1="239.8" y1="46.7" x2="239.8" y2="89.3"/>
+		<g>
+			<polygon class="st10" points="236.4,85.3 239.8,88.7 243.2,85.3 243.2,88.2 239.8,91.6 236.4,88.2 			"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_42_">
+	<g>
+		<line class="st9" x1="329.8" y1="71.7" x2="329.8" y2="89.3"/>
+		<g>
+			<polygon class="st10" points="326.4,85.3 329.8,88.7 333.2,85.3 333.2,88.2 329.8,91.6 326.4,88.2 			"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_32_">
+	<g>
+		<line class="st9" x1="39.8" y1="61.7" x2="39.8" y2="89.3"/>
+		<g>
+			<polygon class="st10" points="36.4,85.3 39.8,88.7 43.2,85.3 43.2,88.2 39.8,91.6 36.4,88.2 			"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_19_">
+	<g>
+		<line class="st4" x1="49.8" y1="71.7" x2="49.8" y2="89.3"/>
+		<g>
+			<polygon class="st5" points="46.4,85.3 49.8,88.7 53.2,85.3 53.2,88.2 49.8,91.6 46.4,88.2 			"/>
+		</g>
+	</g>
+</g>
+<rect id="XMLID_210_" x="73.3" y="15" class="st4" width="49" height="31.4"/>
+<line class="st11" x1="15.8" y1="127.7" x2="29.8" y2="120.7"/>
+<line class="st11" x1="29.8" y1="127.7" x2="29.8" y2="120.7"/>
+<line class="st11" x1="37.8" y1="127.7" x2="37.8" y2="120.7"/>
+<line class="st11" x1="44.8" y1="120.7" x2="37.8" y2="120.7"/>
+<line class="st11" x1="44.8" y1="127.7" x2="44.8" y2="120.7"/>
+<line class="st11" x1="51.8" y1="120.7" x2="51.8" y2="127.7"/>
+<line class="st11" x1="44.8" y1="127.7" x2="51.8" y2="127.7"/>
+<g id="XMLID_6_">
+	<text id="XMLID_7_" transform="matrix(1 0 0 1 123.4419 117.9902)" class="st0 st1 st2">Mixer</text>
+</g>
+<g id="XMLID_18_">
+	<text id="XMLID_23_" transform="matrix(1 0 0 1 86.0732 34.9902)" class="st0 st1 st2">LFO</text>
+</g>
+<line id="XMLID_28_" class="st9" x1="229.8" y1="46.9" x2="229.8" y2="61.7"/>
+<line id="XMLID_24_" class="st9" x1="249.8" y1="46.9" x2="249.8" y2="71.9"/>
+<rect id="XMLID_26_" x="205.3" y="15" class="st9" width="69" height="31.4"/>
+<g id="XMLID_17_">
+	<text id="XMLID_25_" transform="matrix(1 0 0 1 213.3349 34.9902)" class="st0 st1 st2">Envelope</text>
+</g>
+<g id="XMLID_12_">
+	<text id="XMLID_20_" transform="matrix(1 0 0 1 219.6005 117.9902)" class="st0 st1 st2">Filter</text>
+</g>
+<g id="XMLID_37_">
+	<text id="XMLID_38_" transform="matrix(1 0 0 1 317.8476 117.9902)" class="st0 st1 st2">VCA</text>
+</g>
+<rect id="XMLID_3_" x="105.8" y="92.7" class="st6" width="68" height="42"/>
+<g id="XMLID_11_">
+	<g>
+		<line class="st12" x1="269.1" y1="113.7" x2="292.5" y2="113.7"/>
+		<g>
+			<polygon class="st13" points="288.5,117.1 291.9,113.7 288.5,110.3 291.4,110.3 294.8,113.7 291.4,117.1 			"/>
+		</g>
+	</g>
+</g>
+<rect id="XMLID_9_" x="200.8" y="92.7" class="st12" width="68" height="42"/>
+<rect id="XMLID_22_" x="295.8" y="92.7" class="st14" width="68" height="42"/>
+<line class="st8" x1="49.8" y1="71.7" x2="92.8" y2="71.7"/>
+<line class="st8" x1="102.8" y1="71.7" x2="229.8" y2="71.7"/>
+<line class="st15" x1="39.8" y1="61.7" x2="229.8" y2="61.7"/>
+<line class="st15" x1="249.8" y1="71.7" x2="329.8" y2="71.7"/>
+</svg>

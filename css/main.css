@@ -181,3 +181,23 @@ td {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
+#cf {
+  position:relative;
+  height:500px;
+  width:100%;
+  margin:20px;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}

@@ -17,10 +17,8 @@ title: Amalgam
             <li><a href="#algorithms">Inputs</a></li>
             <li><a href="#outputs">Outputs</a></li>
         </ul>
+        <li><a href="#descriptionTypes">Description of types</a></li>
         <li><a href="#howItWorks">How it works</a></li>
-        <ul>
-            <li><a href="#overviewTypes">Overview of types</a></li>
-        </ul>
     </ul>
     <h2 id="userGuide">User Guide</h2>
     <p>
@@ -45,8 +43,11 @@ title: Amalgam
         <li><b>L/R AND and XOR</b> AND and XOR outputs where each channel of X is AND'd or XOR'd with the corresponding Y channel e.g. Left AND = XL AND YL.</li>
         <li><b>Pulses: </b> These outputs are pulses that are derived from the left and right Z outputs, both single and double (or octave doubled) pulses.</li>
     </ul>
-    <h2 id="howItWorks">How it works</h2>
-    <button id="overviewTypes" class="accordion">Overview of types</button>
+    <h2 id="descriptionTypes">Overview of types</h2>
+    <p>
+        Amalgam features 17 combination types, each which a different flavour ranging from traditional ring modulation through to brutal, glitchy, bit-wise opeations.
+    </p>
+    <button class="accordion">Types</button>
     <div class="panel">
         <table class="wider" style="width: 100%">
             <tr><td><b>Type</b></td><td><b>Description</b></td><td><b>Param A</b></td><td><b>Param B</b></td></tr>
@@ -69,6 +70,8 @@ title: Amalgam
             <tr><td>Float 32 Glitch</td><td>Directly combines and switches each bit of X and Y depending on their previous state as 32-bit floating point numbers</td><td>Jitter</td><td>Bit Crush</td></tr>
         </table>
     </div>
+    <h2 id="howItWorks">How it works</h2>
+
 </div><!-- /.amalgam -->
 
 <script src="/script/accordion.js"></script>
