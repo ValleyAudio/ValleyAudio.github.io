@@ -11,6 +11,7 @@ title: Amalgam
     <p>Amalgam is a stereo, multimode signal multiplier, combiner, masher. It is beyond your typical 'Ring Mod' multiplier, exploring the different methods of amalgamating two signals.</p>
     <h2>Contents</h2>
     <ul>
+        <li><a href="#architecture">Architecture</a></li>
         <li><a href="#userGuide">User Guide</a></li>
         <ul>
             <li><a href="#knobs">Knobs</a></li>
@@ -18,8 +19,14 @@ title: Amalgam
             <li><a href="#outputs">Outputs</a></li>
         </ul>
         <li><a href="#descriptionTypes">Description of types</a></li>
-        <li><a href="#howItWorks">How it works</a></li>
     </ul>
+    <h2 id="architecture">Architecture</h2>
+    <p>
+        Below is a flowchart that shows how the signals are processed by Amalgam, and the location of each output in respect to the core 'Combiner' section.
+    </p>
+    <center>
+        <img src="images/amalgamFlowchart.svg" alt="Interzone" style="max-width:100%; max-height:250px; margin-top:20px; margin-bottom:20px;">
+    </center>
     <h2 id="userGuide">User Guide</h2>
     <p>
         All of the controls on Amalgam have CV inputs available allowing for full automation of all parameters.
@@ -70,11 +77,6 @@ title: Amalgam
             <tr><td>Float 32 Glitch</td><td>Directly combines and switches each bit of X and Y depending on their previous state as 32-bit floating point numbers</td><td>Jitter</td><td>Bit Crush</td></tr>
         </table>
     </div>
-    <h2 id="howItWorks">How it works</h2>
-    <p>
-        Under construction
-    </p>
-
 </div><!-- /.amalgam -->
 
 <script src="/script/accordion.js"></script>
