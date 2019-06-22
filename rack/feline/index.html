@@ -1,0 +1,52 @@
+---
+layout: default
+title: Feline
+---
+<div class="feline">
+    <h1>Feline</h1>
+    <h2>A stereo filter that can really meow</h2>
+    <center>
+        <img src="images/feline.jpg" alt="Feline" style="max-width:100%; max-height:500px; margin-top:20px; margin-bottom:20px;">
+    </center>
+    <p>Feline is a stereo version of the filter section from <a href="../interzone/index.html">Interzone</a>. To take advantage of the stereo feature, the cutoff frequency for each channel can be offset from each other by up to ±1 octave. This allows for interesting stereo phasing effects, and if the Mix output is used, Feline can generate vowel-like tones.</p>
+    <h2>Contents</h2>
+    <ul>
+        <li><a href="#userGuide">User Guide</a></li>
+        <ul>
+            <li><a href="#knobs">Knobs</a></li>
+            <li><a href="#algorithms">Inputs</a></li>
+            <li><a href="#outputs">Outputs</a></li>
+        </ul>
+    </ul>
+    <h2 id="userGuide">User Guide</h2>
+    <p>
+        All of the controls on Feline have CV inputs available allowing for full automation of all parameters.
+    </p>
+    <h3 id="knobs">Controls</h3>
+    <ul>
+        <li><b>Freq:</b> Base cutoff frequency for each filter channel.</li>
+        <li><b>Res:</b> Filter resonance.</li>
+        <li><b>Spc (Spacing):</b> Offsets the cutoff frequncy of each filter channel from the base cutoff by ±1 octave.</li>
+        <li><b>Trgt (Target):</b> Sets which filter channel will be offset by Spc. At 0% only the right channel is offset, and at 100% both are offset in opposite directions.</li>
+        <li><b>4P / 2P Switch:</b> Number of filter poles, either 2 or 4, or -12dB or -24dB per octave.</li>
+        <li><b>LPF / BPF Switch:</b> Filter pass band type, either Lowpass (LPF) or Bandpass (BPF).</li>
+        <li><b>Drive:</b> Filter input drive. Boosts the input signals in order to over-drive the filter.</li>
+    </ul>
+    <h3 id="inputs">Inputs</h3>
+    <ul>
+        <li><b>L and R:</b> The Left and Right audio inputs of the filter. If only one input is connected, the signal is copied over to the other unconnected channel.</li>
+        <li><b>Freq CV:</b> CV input that sets the base cutoff frequency.</li>
+        <li><b>Res CV:</b> CV input that controls the filter resonance.</li>
+        <li><b>Drive CV:</b> CV input that controls the filter input drive.</li>
+        <li><b>Spc CV:</b> CV input that controls each filter channel cutoff spacing.</li>
+        <li><b>Trgt CV:</b> CV input that controls each filter cutoff spacing target.</li>
+    </ul>
+    <h3 id="outputs">Outputs</h3>
+    <ul>
+        <li><b>Mix:</b> Sum output of the left and right filter channels. Use this to create intersting vowel like sounds when changing the cutoff spacing.</li>
+        <li><b>L and R:</b> Left and right output of filter. Cool stereo phasing effects can be made when the filter cutoff spacing is modulated.</li>
+    </ul>
+
+</div><!-- /.feline -->
+
+<script src="/script/accordion.js"></script>
