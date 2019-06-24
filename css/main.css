@@ -45,6 +45,13 @@ nav a {
     color: #FFFFFF
 }
 
+.nav-right {
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #FFFFFF;
+    float: right;
+}
+
 h1 {
     font-size: 3em;
     font-weight: normal;
