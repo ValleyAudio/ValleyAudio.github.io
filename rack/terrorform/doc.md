@@ -13,6 +13,7 @@ Version 1.1.0, &copy; 2020 Dale Johnson
 - [A word from the developer](#a-word-from-the-developer)
     - [Some trivia](#some-trivia)
 - [The Controls](#the-controls)
+    - [Context menu](#-context-menu)
 - [Usage](#usage)
     - [Waves](#waves)
     - [Phasor Shaper](#phasor-shaper)
@@ -38,17 +39,18 @@ Terrorform is a shapeshifting, voltage controlled, wavetable synthesis voice tha
 * 64 banks of built-in wavetables.
 * User wavetable bank loading with up to 64 slots.
 * 25 wavetable shaper modes.
-* 15 output enhancement modes.
+* 14 output enhancement modes.
 * 2x2 FM inputs with VCAs.
 * Both "DX style phase mod" and "True" modes for different frequency modulation flavours.
 * Velocity sensitive Lowpass Gate (LPG) with programmable attack and decay.
 * "Zero" frequency mode that turns the module into a waveshaper via its FM inputs.
 * "LFO" mode
+* Text based tooltips
 <div style="page-break-after: always"></div>
 
 ## A word from the developer
 
-I find it quite crazy to believe that it has been nearly 3 years since I began developing third party modules for VCV Rack. When my friend Oli showed me program, I was stunned. My first question was "Can I develop for this?", and we of course know the answer to that!
+I find it quite crazy to believe that it has been nearly 3 years since I began developing third party modules for VCV Rack. When a friend showed me program, I was stunned. My first question was "Can I develop for this?", and we of course know the answer to that!
 
 This module took much longer than I had originally anticipated. I initially thought it would have been a simplification of my beastly FM module, Dexter, by isolating a single operator. However, like most things, it is never that simple. When I did isolate an operator from Dexter, I felt that it was just too simple, and so I decided to  add a wave-shaper (dubbed the _Enhancer_), a Low-pass gate, and (most importantly for me) the ability to add your own wavetables. I find it amusing that back in September of 2019 I had completed most of the audio processing work, and thought that the user wavetable manager would be simple...
 
@@ -88,6 +90,25 @@ The display in the centre of Terrorform indicates the setting of the Wavetable, 
 
 ![Wavetable Dropdown](./images/dropDown.jpeg =325x340)
 
+
+### Context menu
+
+The context, or right-click, menu contains extra features that alter the appearance and operation or Terrorform. As with any other Rack module, this menu is accessed by right-clicking in any empty area of the module. The menu contains the following options:
+
+* **User Bank manager**
+  - **Open:** Clicking this will open the user bank manager and allow you to load your own wavetable banks into Terrorform (see the _The User Wavetable Manager_ section).
+* **Output level**
+  - **Reduce the level by 6 dB:** Cuts the main output signal by half, which is useful if connecting this module directly to a filter that is sensitive to being overdriven.
+* **Display style:** Set the colour of the digital display menus
+  - Red
+  - Yellow
+  - Green
+  - Blue
+  - White
+* **Panel style:** Change the style of the front panel
+  - Dark
+  - Light
+
 ## Usage
 
 In normal operation, the tuning of Terrorform is set using the blue pitch controls at the very top, and is offset using the sum of the two VOct inputs. The read phasor shaping is set using the _Shape Type_ and _Shape Depth_ knobs, and the output waveform is further enhanced by the _Enhancer_. The mode and depth of the _Enhancer_ is set by the _Enhancer Type_ and _Enhancer Depth_ knobs.
@@ -100,11 +121,41 @@ In Terrorform, there are 64 built-in wavetable banks, each with their own timbra
 
 ### Phasor Shaper
 
-To add more _flavour_ and variation to the waveform, the wavetable read phasor can be shaped in many different ways. The shaping type is set by _Shape Type_, and the depth is set by _Shape Depth_.
+To add more _flavour_ and variation to the waveform, the wavetable read phasor can be shaped in many different ways. The shaping type is set by _Shape Type_, and the depth is set by _Shape Depth_. The following table lists and describes each mode of the phasor shaper:
+
+|Mode|Description|
+|---|---|
+|Bend|The phasor is dragged to one side from the middle so that the 1st half of the table is read faster than the last half|
+|Tilt|The phasor reads the table faster and then waits at the end until a new cycle begins|
+|Lean|The phasor follows a curve, so the table is initial read slowly then gradually faster towards the end of the cycle|
+|Twist|Twists the middle third of the phasor around the centre, making read the table forwards, backwards, then forwards again|
+|Wrap|The end of the phasor is wrapped back to the beginning several times, creating an effect similar to classic hard sync|
+|Sine Wrap|Like Wrap, but the phasor is passed through a sine function, thus giving a gentler, soft sync type sound|
+|Mirror|Both ends of the phasor are mirrored when either reaches the start or end|
+|Reflect|At a given point, the phasor is switched from an rising ramp to a falling ramp|
+|Pulse|The phasor is _switched off_ an on at several positions, giving a type of PWM effect|
+|Step 4|Blends the phasor into a 4-step staircase, creating a very lo-fi, bit crushed sound|
+|Step 8|Blends the phasor into an 8-step staircase, creating a very lo-fi, bit crushed sound|
+|Step 16|Blends the phasor into a 16-step staircase, creating a very lo-fi, bit crushed sound|
+|Var Step|Gradually makes the phasor increasingly stepped until it disappears completely|
 
 ### Enhancer
 
-Once the wavetable has been read, the generated a waveform can be even further enhanced. The enhancer is essentially a waveshaper. This is different from phasor shaping which affects how the wavetable is read, but instead this shapes the resulting output waveform after the table has been read.
+Once the wavetable has been read, the generated a waveform can be even further enhanced. The enhancer is essentially a waveshaper. This is different from phasor shaping which affects how the wavetable is read, but instead this _shapes_ the resulting output waveform after the table has been read. The following table lists and describes each mode of the enhancer:
+
+| Mode | Description | Param |
+|---|---|---|
+|Bitcrush|Downsamples the wave to achieve a lo-fi, crunchy timbre|Sets the down-sampling frequency|
+|Quantize|Creates steps in the wave, creating a dusty, old-school texture|Controls the distance between steps|
+|AND Int|Integer AND's the bits of the wave with the bits of the read phasor|Mixes between the clean and ANDed signal|
+|XOR Int|Integer XOR's the bits of the wave with the bits of the read phasor|Mixes between the clean and XORed signal|
+|AND Float|Floating-point AND's the bits of the wave with the bits of the read phasor|Mixes between the clean and ANDed signal|
+|Overdrive|Adds some harmonic content to the wave by passing it through a hyperbolic tangent function|Controls the amount of overdrive|
+|Ring Mod|Multiplies the wave with a carrier sine wave derived from the read phasor|Sets the carrier sine wave frequency|
+|Sharpen|Multiplies the wave against itself to sharpen the peaks in the wave|Degree of sharpness|
+|Sine|Passes the wave through a sine function, much like a Chebyshev waveshaper, creating an FM-like timbre|Amount of waveshaping|
+|Fold|Classic wavefolding that folds the wave back upon itself when it reaches a limit|Degree of folding|
+|Mirror|Like wavefolding except the waveform reappears at from the opposite voltage _rail_. Crossfading is applied to soften this effect as it can otherwise sound too aggressive|Degree of mirroring|
 
 When the LPG is enabled, in its default state the signal chain is **Wavetable Reader > Enhancer > Lowpass Gate**. However, by enabling the "Swap EH & LPG" button, the order can be switched to **Wavetable Reader > Lowpass Gate > Enhancer**.
 
@@ -163,15 +214,20 @@ The following two sub-sections discuss example uses for this feature.
 
 #### Example 1: Leader-Follower
 
-Zero frequency allows you to drive a _follower_ Terrorform module in _phase mod_ mode with a _leader_ Terrorform. First, put the _follower_ Terrorform into _Zero Frequency_ mode and set the FM mode in the context menu to _DX Style Phase Mod_. Then, connect the _Phasor Output_ from the leader Terrorform (not in Zero Frequency mode) into an FM input of the _follower_ and turn up the input's attenuator (see diagram below).
+Zero frequency allows you to drive a _follower_ Terrorform module in _phase mod_ mode with a _leader_ Terrorform. First, put the _follower_ Terrorform into _Zero Frequency_ mode by pressing the _Zero_ button, and ensure that the _True FM_ button is off (i.e _DX Style Phase Mod_ mode). Then, connect the _Phasor Output_ from the leader Terrorform (not in Zero Frequency mode) into an FM input of the _follower_ and turn up the FM input's attenuator (see following screenshot). You will begin to hear a sound as before, but the pitch is now controlled by the _leader_ module. In the _follower_, you will still have the shaping and wave enhancement features, but also have perfect pitch and phase matched signals between both modules. You can drive as many Terrorform modules as you want using one or more leaders and their phasor outputs connected to the followers FM inputs.
 
-You will begin to hear a sound as before, but the pitch is now controlled by the _leader_ module. In the _follower_, you will still have the shaping and wave enhancement features, but also have perfect pitch and phase matched signals between both modules. You can drive as many Terrorform modules as you want using one or more leaders and their phasor outputs connected to the followers FM inputs.
+![Viewer](images/leaderFollower.jpg)
 
 #### Example 2: Complex Waveshaper
 
 Zero frequency is not limited to letting you drive Terrorforms with other Terrorform. As long as any signal, either AC or DC, is connected to the FM input whilst in _DX Style Phase Mod_ mode, the wavetable reading then controlled by this external signal. This turns Terrorform into a complex waveshaper, where the result is controlled by the wave, shaper, and enhancement parameters.
 
+![Viewer](images/complexWaveshaper.jpg)
+
+_Note:_ The waveshaping result will depend on the peak-to-peak voltage and voltage offset of the input signal. For optimal waveshaping, the input signal should be ±5v peak-to-peak with no offset.
+
 <div style="page-break-after: always"></div>
+
 ## The User Wavetable Manager
 
 Got bored of the built in tables? Want to load in your own? Terrorform lets you load up to 64 wavetable banks as .WAV files, where each bank can contain up to 64 waves that are 256 samples per cycle in length. This particular specification was chosen so that wavetables generated in the free "WaveEdit" tool from Synthesis Technology (no affiliation) could be used directly in Terrorform with no compatibility issues.
