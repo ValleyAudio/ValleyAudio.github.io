@@ -38,8 +38,9 @@ Terrorform is a shapeshifting, voltage controlled, wavetable synthesis voice tha
 * 16 voice polyphony
 * 64 banks of built-in wavetables.
 * User wavetable bank loading with up to 64 slots.
-* 25 wavetable shaper modes.
-* 14 output enhancement modes.
+* 27 wavetable shaper modes.
+* 11 output enhancement modes.
+* 16 synchronisation modes.
 * 2x2 FM inputs with VCAs.
 * Both "DX style phase mod" and "True" modes for different frequency modulation flavours.
 * Velocity sensitive Lowpass Gate (LPG) with programmable attack and decay.
@@ -65,7 +66,7 @@ Dale, Valley Audio Soft
 
 The name _Terrorform_ is a reference to two things.
 
-First, it is a play on the word _terraforming_, which is a hypothetical process of modifying the landscape, oceans, atmosphere of a planet in order to make it habitable for life. This is essentially what you are doing in Terrorform: sculpting and shaping the sound from a base wave to create something new.
+First, it is a play on the word _terraforming_, which is a hypothetical process of modifying the landscape, oceans, and atmosphere of a planet in order to make it habitable for life. This is essentially what you are doing in Terrorform: sculpting and shaping the sound from a base wave to create something new.
 
 Second, it is a reference to the British sci-fi sitcom "Red Dwarf", and is named after the episode "Terrorform". In the episode, the "beloved" hologram Rimmer is taken prisoner by manifestations of his own mind on a shapeshifting psy-moon.
 
@@ -81,7 +82,7 @@ I felt the name was very fitting. The sounds I have twisted out of this module c
 <div style="page-break-after: always"></div>
 ## The Controls
 
-Terroform's controls can be split up into several parts (see below):
+Terrorform's controls can be split up into several parts (see below):
 
 ![Controls](./images/terrorformControls.jpg)
 <div style="page-break-after: always"></div>
@@ -89,7 +90,6 @@ Terroform's controls can be split up into several parts (see below):
 The display in the centre of Terrorform indicates the setting of the Wavetable, Phasor Shaping, and Enhancer modes, yet, however, it is more than a display. Hovering your mouse cursor over the display and clicking on one of the three rows will open a drop-down for that setting. For example, clicking on the wavetable row will open the the bank selection menu, with all 64 banks sorted into 4 groups of 16 banks (see below).
 
 ![Wavetable Dropdown](./images/dropDown.jpeg =325x340)
-
 
 ### Context menu
 
@@ -108,6 +108,8 @@ The context, or right-click, menu contains extra features that alter the appeara
 * **Panel style:** Change the style of the front panel
   - Dark
   - Light
+
+<div style="page-break-after: always"></div>
 
 ## Usage
 
@@ -130,14 +132,28 @@ To add more _flavour_ and variation to the waveform, the wavetable read phasor c
 |Lean|The phasor follows a curve, so the table is initial read slowly then gradually faster towards the end of the cycle|
 |Twist|Twists the middle third of the phasor around the centre, making read the table forwards, backwards, then forwards again|
 |Wrap|The end of the phasor is wrapped back to the beginning several times, creating an effect similar to classic hard sync|
-|Sine Wrap|Like Wrap, but the phasor is passed through a sine function, thus giving a gentler, soft sync type sound|
+|Sine Wrap|Like Mirror, but the phasor is passed through a sine function, thus giving a gentler sound|
 |Mirror|Both ends of the phasor are mirrored when either reaches the start or end|
+|Harmonics|Like Sine Wrap, but with cross-fading between fixed sine harmonics|
+|Warble|The phasor is randomly wobbled backwards and forwards, giving a _warbling_ effect|
 |Reflect|At a given point, the phasor is switched from an rising ramp to a falling ramp|
 |Pulse|The phasor is _switched off_ an on at several positions, giving a type of PWM effect|
 |Step 4|Blends the phasor into a 4-step staircase, creating a very lo-fi, bit crushed sound|
 |Step 8|Blends the phasor into an 8-step staircase, creating a very lo-fi, bit crushed sound|
 |Step 16|Blends the phasor into a 16-step staircase, creating a very lo-fi, bit crushed sound|
 |Var Step|Gradually makes the phasor increasingly stepped until it disappears completely|
+|Buzz|The phasor is cloned from within itself from the middle, resulting in a _buzzy_ texture|
+|Buzz X2|Like previous but the phasor is cloned twice|
+|Buzz X4|Like previous but cloned four times|
+|Wrinkle|A derivative of Buzz, but with a sine function applied, resulting in a bell like tone|
+|Wrinkle X2|Like previous but the phasor is cloned twice|
+|Wrinkle X4|Like previous but the phasor is cloned four times|
+|Sine Up|A derivative of Wrinkle, but with a fade **down** function applied, resulting in a vocal / nasal like tone which is dependent on the wavetable|
+|Sine Up X2|Like previous but the phasor is cloned twice|
+|Sine Up X4|Like previous but the phasor is cloned four times|
+|Sine Down|A derivative of Wrinkle, but with a fade **up** function applied, resulting in a vocal / nasal like tone which is dependent on the wavetable|
+|Sine Down X2|Like previous but the phasor is cloned twice|
+|Sine Down X4|Like previous but the phasor is cloned four times|
 
 ### Enhancer
 
@@ -177,9 +193,9 @@ The attack and decay of the envelope is set by the respective "Attack" and "Deca
 
 ### Sync
 
-Terrorform features 16 synchronisation modes.
+Synchronisation, or sync for short, is a method of forcing an oscillator to reset so that match its pitch to another oscillator. This is usually achieved by sending a pulse or other zero-crossing signal from source oscillator into the a special sync input on the target oscillator. When a new pulse is detected, known as a _sync event_, the target oscillator resets. This usually results in buzzy overtones depending on the type of synchronisation (the reset method described is known as hard sync). Terrorform features 16 synchronisation types.
 
-The following table describes what happens to the read phasor upon a sync event.
+The following table describes what happens to the read phasor upon detection of a sync event.
 
 | Mode | Description
 |---|---|
@@ -217,6 +233,8 @@ The following two sub-sections discuss example uses for this feature.
 Zero frequency allows you to drive a _follower_ Terrorform module in _phase mod_ mode with a _leader_ Terrorform. First, put the _follower_ Terrorform into _Zero Frequency_ mode by pressing the _Zero_ button, and ensure that the _True FM_ button is off (i.e _DX Style Phase Mod_ mode). Then, connect the _Phasor Output_ from the leader Terrorform (not in Zero Frequency mode) into an FM input of the _follower_ and turn up the FM input's attenuator (see following screenshot). You will begin to hear a sound as before, but the pitch is now controlled by the _leader_ module. In the _follower_, you will still have the shaping and wave enhancement features, but also have perfect pitch and phase matched signals between both modules. You can drive as many Terrorform modules as you want using one or more leaders and their phasor outputs connected to the followers FM inputs.
 
 ![Viewer](images/leaderFollower.jpg)
+
+<div style="page-break-after: always"></div>
 
 #### Example 2: Complex Waveshaper
 
@@ -266,7 +284,7 @@ Whilst cloning a bank may seem pointless at first, where you may ask yourself "W
 
 To clone a bank, select it and click the "Clone" button. You will be shown a similar visualisation window as when loading a bank from a file. Here, you can view the table and select the range of waves to clone by setting draggables the start and end wave number boxes at the top.
 
-Moving a bank is almost the same, except the bank is moved rather than cloned to its new destination. To do this, click the "Move" button. Unlike cloning you cannot crop the waveform, so you will only be shown the destination screen. Once selected, click "Okay", and you will be taken back to the slot grid. Clicking on 'Next' will take you to the destination screen, which is here you can select where you want source bank to be cloned to. Once selected, click on "Okay", and then the bank will be cloned to the new destination bank.
+Moving a bank is almost the same, except the bank is moved rather than cloned to its new destination. To do this, click the "Move" button. Unlike cloning you cannot crop the waveform, so you will only be shown the destination screen. Once selected, click "Okay", and you will be taken back to the slot grid. Clicking on 'Next' will take you to the destination screen. Here you select which destination bank you want source bank to be cloned to. Once selected, click on "Okay", and then the source will be cloned to the new destination bank.
 
 ![Move Dest](managerMove.jpg =257x325) ![Move Done](managerMoveDone.jpg =257x325)
 <div style="page-break-after: always"></div>
@@ -287,6 +305,6 @@ Again, like for hard disk drives, there is a defragmentation feature built into 
 <div style="page-break-after: always"></div>
 ## Appendix A: How it works
 
-Terrorform generates a tone using _wavetable lookup synthesis_. This is the exact same method used in each operator in Dexter. As the name suggests, the tone is generated by looking up and reading back the contents of a wavetable. The lookup process is done by a rising ramp wave, known as a read phasor, that reads the table from beginning to end at a set frequency. Different waves in a bank can be scanned through by cross fading between adjacent tables within the same bank. The read phasor can be shaped in several ways that can alter the output waveform. Terrorform offers 25 shaping modes. After being read, the resulting signal is passed through the _Enhancer_. This further shapes the signal in different ways such as bit-crushing, Chebyshev waveshaping, folding, and more.
+Terrorform generates a tone using _wavetable lookup synthesis_. This is the exact same method used in each operator in Dexter. As the name suggests, the tone is generated by looking up and reading back the contents of a wavetable. The lookup process is done by a rising ramp wave, known as a read phasor, that reads the table from beginning to end at a set frequency. Different waves in a bank can be scanned through by cross fading between adjacent tables within the same bank. The read phasor can be shaped in several ways that can alter the output waveform. Terrorform offers 27 shaping modes. After being read, the resulting signal is passed through the _Enhancer_. This further shapes the signal in different ways such as bit-crushing, Chebyshev waveshaping, folding, and more.
 
 ![How it works](operationalDiagramSmaller.png)
