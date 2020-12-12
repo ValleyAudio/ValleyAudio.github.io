@@ -1,42 +1,42 @@
 var modules = [
   {
-    slug: 'Amalgam',
+    slug: 'amalgam',
     name: 'Amalgam',
     tags: ['Effects'],
     description: 'Multimode, stereo signal masher'
   },
   {
-    slug: 'Dexter',
+    slug: 'dexter',
     name: 'Dexter',
     tags: ['VCO'],
     description: '4-Op FM synthesis VCO',
   },
   {
-    slug: 'Feline',
+    slug: 'feline',
     name: 'Feline',
     tags: ['Filter'],
     description: 'Stereo OTA filter',
   },
   {
-    slug: 'Interzone',
+    slug: 'interzone',
     name: 'Interzone',
     tags: ['Voice'],
     description: 'A monophonic, virtual analogue synth voice',
   },
   {
-    slug: 'Terrorform',
+    slug: 'terrorform',
     name: 'Terrorform',
     tags: ['VCO'],
     description: 'Wavetable synthesis voice',
   },
   {
-    slug: 'Topograph',
+    slug: 'topograph',
     name: 'Topograph & µGraph',
     tags: ['Sequencer'],
     description: 'Topographic drum sequencers',
   },
   {
-    slug: 'Plateau',
+    slug: 'plateau',
     name: 'Plateau',
     tags: ['Effects'],
     description: 'Lush plate reverb'
@@ -84,7 +84,7 @@ function addModuleElement(m) {
   div.appendChild(description);
 
   var img = document.createElement('img');
-  img.src = 'rack/' + m.slug + '/images/' + m.slug + 'icon.jpg';
+  img.src = 'rack/' + m.slug + '/images/' + m.slug + 'Icon.jpg';
   div.appendChild(img);
 
   document.getElementById('module-grid').appendChild(div);
