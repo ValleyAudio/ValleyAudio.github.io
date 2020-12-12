@@ -69,13 +69,23 @@ h3 {
     font-weight: normal;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h4 {
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 p {
     font-size: 1.25em;
     font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #CDCDCD;
-    text-align: justify;
+    text-align: justify;]
 }
 
 b {
@@ -89,16 +99,6 @@ footer {
     font-size: 1.2em;
     color: #FAFAFA;
 }
-
-/*ul.posts {
-    margin: 20px auto 40px;
-    color: #FFFFFF;
-}
-
-ul.posts li {
-    list-style: none;
-    color: #FFFFFF;
-}*/
 
 ul {
     list-style-type: disc;
@@ -207,4 +207,46 @@ td {
 
 #cf img.top:hover {
   opacity:0;
+}
+
+#module-grid {
+   overflow: hidden;
+   min-height: 190px;
+   border-width: 0px;
+   padding: 0px;
+}
+
+.ModuleGridElement {
+   float: left;
+   padding:5px;
+   margin-right: 5px;
+   margin-top: 5px;
+   text-align: center;
+   color: rgb(177, 176, 176);
+   border-color: #4d4d4d;
+   border-radius: 5px;
+   border-style: solid;
+   border-width: 1px;
+}
+
+.ModuleGridElement:hover {
+   background-color: #171717;
+   color: rgb(255, 255, 255);
+   border-width: 1px;
+}
+
+.ModuleGridElement img {
+   margin-top: 10px;
+   max-height: 225px;
+}
+
+.ModuleName {
+   font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.ModuleDescription {
+   font-family:'alteDin', 'Helvetica', 'Arial', 'Sans-Serif';
+   font-size: 14px;
 }
