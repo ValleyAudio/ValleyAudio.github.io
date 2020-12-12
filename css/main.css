@@ -214,6 +214,8 @@ td {
    min-height: 190px;
    border-width: 0px;
    padding: 0px;
+   margin-top: 5px;
+   margin-bottom: 5px;
 }
 
 .ModuleGridElement {
