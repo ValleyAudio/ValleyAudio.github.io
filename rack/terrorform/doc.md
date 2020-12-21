@@ -8,24 +8,32 @@ Version 1.1.0, &copy; 2020 Dale Johnson
 ## Contents
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 
-- [Description](#description)
-- [Features](#features)
-- [A word from the developer](#a-word-from-the-developer)
+- [Terrorform](#terrorform)
+  - [**A complex, shapeable, bendable, customisable wavetable voice.**](#a-complex-shapeable-bendable-customisable-wavetable-voice)
+  - [Contents](#contents)
+  - [Description](#description)
+  - [Features](#features)
+  - [A word from the developer](#a-word-from-the-developer)
     - [Some trivia](#some-trivia)
-- [The Controls](#the-controls)
-    - [Context menu](#-context-menu)
-- [Usage](#usage)
+  - [The Controls](#the-controls)
+    - [Context menu](#context-menu)
+  - [Usage](#usage)
     - [Waves](#waves)
     - [Phasor Shaper](#phasor-shaper)
     - [Enhancer](#enhancer)
     - [Lowpass Gate (LPG)](#lowpass-gate-lpg)
-	- [LFO Mode](#lfo-mode)
-	- [Zero Frequency](#zero-frequency)
-		- [Use 1: Leader-Follower](#use-1-leader-follower)
-		- [Use 2: Complex Waveshaper](#use-2-complex-waveshaper)
-- [The User Wavetable Manager](#the-user-wavetable-manager)
-	- [Loading, viewing, and deleting](#loading-viewing-and-deleting)
-- [Appendix A: How it works](#appendix-a-how-it-works)
+    - [Sync](#sync)
+    - [LFO mode](#lfo-mode)
+    - [Zero frequency](#zero-frequency)
+      - [Example 1: Leader-Follower](#example-1-leader-follower)
+      - [Example 2: Complex Waveshaper](#example-2-complex-waveshaper)
+  - [The User Wavetable Manager](#the-user-wavetable-manager)
+    - [Accessing and using the manager](#accessing-and-using-the-manager)
+    - [Loading, viewing, and deleting](#loading-viewing-and-deleting)
+    - [Cloning and moving](#cloning-and-moving)
+    - [Viewing](#viewing)
+    - [Defragmentation](#defragmentation)
+  - [Appendix A: How it works](#appendix-a-how-it-works)
 
 <!-- /TOC -->
 
@@ -288,6 +296,7 @@ Moving a bank is almost the same, except the bank is moved rather than cloned to
 
 ![Move Dest](managerMove.jpg =257x325) ![Move Done](managerMoveDone.jpg =257x325)
 <div style="page-break-after: always"></div>
+
 ### Viewing
 
 Just want to admire your wavetables? Click on the view button! You can look at each wave in the box at the bottom by dragging vertically in the 3D wave view.
