@@ -3,6 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 761.5 896.2" style="enable-background:new 0 0 761.5 896.2;" xml:space="preserve">
 <style type="text/css">
+    @font-face {
+      font-family: AlteDIN1451Mittelschrift;
+      src: url('../../css/din1451alt-altedin1451.woff');
+    }
 	.st0{fill:none;stroke:#2C3266;stroke-width:4;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#373F80;stroke-width:4;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#434A99;stroke-width:4;stroke-miterlimit:10;}
@@ -23,7 +27,7 @@
 	.st17{font-size:18px;}
 	.st18{font-size:20px;}
 	.st19{fill:#FFFFFF;}
-	.st20{font-family:'AlteDIN1451Mittelschriftgepraegt';}
+	.st20{font-family:'AlteDIN1451Mittelschrift';}
 	.st21{font-size:22px;}
 	.st22{fill:none;stroke:#29B473;stroke-width:4;stroke-miterlimit:10;}
 	.st23{fill:none;stroke:#FFC50A;stroke-width:4;stroke-miterlimit:10;}
